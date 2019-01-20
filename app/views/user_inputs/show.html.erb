@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Input x:</strong>
+  <%= @user_input.input_x %>
+</p>
+
+<p>
+  <strong>Input y:</strong>
+  <%= @user_input.input_y %>
+</p>
+
+<p>
+  <strong>Input x + y</strong>
+  <%= (@user_input.input_y) +  @user_input.input_x %>
+</p>
+
+<%= link_to 'Edit', edit_user_input_path(@user_input) %> |
+<%= link_to 'Back', user_inputs_path %>
